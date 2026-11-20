@@ -1,0 +1,59 @@
+/*
+this is a comment
+	rule syntax:
+	selector {
+		property: value;
+	}
+*/
+	/* this will apply to EVERYTHING */
+	/* it uses Box Sizing */
+
+	*{
+		box-sizing: border-box;
+	}
+
+	body{
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		overflow-x: clip; 
+	}
+
+	body > * {
+		width: 100%;
+	}
+
+	p {
+		font-size: 50pt;
+	}
+
+	.croc{
+		font-size: 70pt;
+		translate: (20vw,0vh);
+        animation: dance 1s infinite alternate linear;
+	}
+
+	.green{
+		color: lime;
+		background-color: darkgreen;
+	}
+
+	.purple{
+		font-size: 10pt;
+		color: lime;
+		background-color: darkmagenta;
+	}
+
+	.big{
+		font-size: 30pt;
+	}
+
+	#important{
+		font-family: monospace;
+		font-size:small;
+	}
+
+	@keyframes dance {
+    0%{transform: translate(20vw,0vh);}
+    100%{transform: translate(50vw,0vh);}
+    }
